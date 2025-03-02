@@ -5,3 +5,22 @@
     font-size: xx-large;
     box-sizing: border-box;
 }
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+ 
+@media only screen and (min-width: 768px){   
+.grid-container{
+    grid-template-columns: 1fr 1fr;
+}
+}    
+
+@media only screen and (min-width: 1024px){   
+.grid-container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}  
+
